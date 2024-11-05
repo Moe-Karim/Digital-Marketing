@@ -1,0 +1,33 @@
+.solution{
+    width: 100%;
+    /* height: 100vh; */
+    background-image:url(../../assets/images/T8sD9gkG0kealtXBbHk3b6bvCvYhxLLUFKYkYzR8.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.solutionCard{
+    max-height: fit-content;
+    margin-top: 30px;
+    width: 18vw;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px gray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    transition: all 0.7s;
+}
+.solutionCard:hover{
+    box-shadow: 2px 2px 15px 5px gray;
+
+}
+.solutionCard ul {
+    list-style: none;
+}
+.solutionCard ul li{
+    border-bottom: 1px solid #21DADB;
+    line-height: 32px;
+}
+.solutionCard h2{
+    border-bottom: 2px solid #21DADB;
+}
