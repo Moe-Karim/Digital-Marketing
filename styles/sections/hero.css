@@ -1,0 +1,22 @@
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../assets/images/digital-marketing.gif);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+.pop{
+    width: 30%;
+    height: 35%;
+    border-radius: 20px;
+    margin: 20%;
+    margin-left: 5%;
+    padding: 20px;
+    background-color: rgba(36, 35, 35, 0.582);
+    z-index: 100;
+    color: white;
+}
+.pop button{
+    width: 50%;
+}
