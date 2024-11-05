@@ -1,0 +1,13 @@
+.about{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../assets/images/bg-1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.about p{
+    font-size: 18pt;
+    text-align: center;
+    line-height: 58px;
+    margin-top: 10%;
+}
