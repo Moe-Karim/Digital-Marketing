@@ -8,13 +8,12 @@ body{
 body h1,h2,h3,h4,h5,h6{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.navigation{
-    position: fixed;
-}
 .nav{
     height: 12vh;
     width: 100%;
     background-color: transparent;
+    transition: all 1s;
+
 }
 .nav img{
     width: 300px;
