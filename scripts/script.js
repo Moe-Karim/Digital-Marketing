@@ -1,21 +1,4 @@
 const navbar = document.getElementById("nav-bar");
-const returnBtn = document.getElementById("return");
-const submitBtn = document.getElementById("submitBtn");
-const popBtn= document.getElementById("popBtn");
-
-returnBtn.addEventListener("click",()=>{
-window.location.href="index.html#hero";
-});
-
-popBtn.addEventListener("click",()=>{
-  window.location.href="index.html#contact";
-});
-
-submitBtn.addEventListener("click",()=>{
-  alert(`Thank you for your message ${document.getElementById("first-name").value}
-  We will be back with you`);
-});
-
 let sticky = navbar.offsetTop;
 window.onscroll = ()=> {
   if (window.pageYOffset >= sticky) {
@@ -29,3 +12,30 @@ gsap.from(".pop", {
     duration: 2,
     x: 100,
   });
+
+
+  function scrollToElement(target, e) {
+    const elem = target ? document.querySelector(target) : null;
+    if (elem) {
+      if (e) e.preventDefault();
+      gsap.to(window, { duration: 1.5, scrollTo: elem });
+    }
+  }
+
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', e => {
+      const target = anchor.getAttribute('href');
+      scrollToElement(target, e);
+    });
+  });
+
+  document.querySelectorAll('button[data-target]').forEach(button => {
+    button.addEventListener('click', e => {
+      const target = button.getAttribute('data-target');
+      scrollToElement(target, e);
+    });
+  });
+
+  if (window.location.hash) {
+    scrollToElement(window.location.hash);
+  }
